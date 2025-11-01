@@ -5,33 +5,32 @@ import "./globals.css"
 import { SiteHeader } from "@/components/site-header"
 
 const orbitron = Orbitron({
-  variable: "--font-orbitron",
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
+	variable: "--font-orbitron",
+	subsets: ["latin"],
+	weight: ["400", "700", "900"],
 })
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+	variable: "--font-inter",
+	subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
-  title: "FlashProX - Премиальные тактические фонари",
-  description: "Освети тьму. Владей светом. Премиальные тактические и многофункциональные фонари.",
-    generator: 'v0.app'
+	title: "FlashProX - Premium Tactical Flashlights",
+	description: "Illuminate the darkness. Master the light. Premium tactical and multifunctional flashlights.",
 }
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode
+	children: React.ReactNode
 }>) {
-  return (
-    <html lang="ru" className={`${orbitron.variable} ${inter.variable}`}>
-      <body className="font-sans antialiased">
-        <SiteHeader />
-        {children}
-      </body>
-    </html>
-  )
+	return (
+		<html lang="ru" className={`${orbitron.variable} ${inter.variable}`}>
+			<body className="font-sans antialiased">
+				<SiteHeader />
+				{children}
+			</body>
+		</html>
+	)
 }

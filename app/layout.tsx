@@ -18,6 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
 	title: "FlashProX - Premium Tactical Flashlights",
 	description: "Illuminate the darkness. Master the light. Premium tactical and multifunctional flashlights.",
+	referrer: 'unsafe-url'
 }
 
 export default function RootLayout({
